@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-size: 16px;
+    margin: 0;
+}
+
+.container {
+    border-radius: 10px;
+    background: hsl(0, 0%, 100%);
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 15px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 5px 0 10px;
+}
+
+#recipe h1 {
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 10px;
+}
+
+#recipe p {
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    font-size: 0.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 16px;
+}
+
+#prep-time {
+    background: hsl(330, 100%, 98%);
+    border-radius: 7px;
+    padding: 20px;
+    margin: 5px;
+    line-height: 20px;
+    font-family: "Outfit", sans-serif;
+}
+
+#prep-time h2 {
+    color: hsl(332, 51%, 32%);
+    font-size: 1rem;
+}
+
+#prep-time ul {
+    margin-left: 20px;
+}
+
+#prep-time ul li {
+    padding-left: 9px;
+    list-style-type: disc;
+    margin: 5px;
+    font-size: 0.8rem;
+}
+
+#ingredients h2,
+#instructions h2,
+footer h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px; 
+}
+
+#ingredients ul,
+#instructions ol {
+    margin-left: 12px;
+    margin-bottom: 20px;
+}
+
+#ingredients li,
+#instructions li {
+    padding-left: 9px;
+    margin: 5px;
+    font-size: 0.615rem;
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    line-height: 15px;
+}
+
+.thin-line {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.prep,
+.insta {
+    font-weight: 500;
+    color: hsl(30, 10%, 34%);
+}
+
+.prep {
+    font-weight: 800;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    padding-left: 25px;
+}
+
+.margin-right {
+    float: right;
+    margin-right: 170px;
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
+}
+
+/* Media Query for mobile view */
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        border-radius: 0; 
+        max-width: 100%; 
+        margin: 0; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+        position: absolute; 
+        top: -20px; 
+        left: 0; 
+        border-radius: 0; 
+    }
+
+    #recipe {
+        position: relative; 
+        padding-top: 45vw;
+
+    }
+
+
+    #recipe h1 {
+        font-size: 1.1rem;
+    }
+
+    #recipe p {
+        font-size: 0.5rem;
+    }
+
+    #prep-time h2 {
+        font-size: 0.9rem;
+    }
+
+    #ingredients h2,
+    #instructions h2,
+    footer h2 {
+        font-size: 1rem;
+    }
+
+    #ingredients li,
+    #instructions li {
+        font-size: 0.5rem;
+    }
+}
+
+/* Media Query for tablet view */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #recipe h1 {
+        font-size: 1.2rem;
+    }
+
+    #recipe p {
+        font-size: 0.6rem;
+    }
+
+    #prep-time h2 {
+        font-size: 1rem;
+    }
+
+    #ingredients h2,
+    #instructions h2,
+    footer h2 {
+        font-size: 1.1rem;
+    }
+
+    #ingredients li,
+    #instructions li {
+        font-size: 0.6rem;
+    }
+}
+
+/* Media Query for desktop view */
+
+@media only screen and (min-width: 1024px) {
+    #recipe h1 {
+        font-size: 1.3rem;
+    }
+
+    #recipe p {
+        font-size: 0.7rem;
+    }
+
+    #prep-time h2 {
+        font-size: 1.1rem;
+    }
+
+    #ingredients h2,
+    #instructions h2,
+    footer h2 {
+        font-size: 1.2rem;
+    }
+
+    #ingredients li,
+    #instructions li {
+        font-size: 0.7rem;
+    }
+}
